@@ -1,0 +1,59 @@
+{
+    "start": [
+      {
+        "id": "1",
+        "desc": "Bienvenido al Museo del Misterio. Te encuentras atrapado en una sala secreta del museo y debes resolver varios acertijos para escapar. Para superar los desafíos, deberás usar diferentes métodos GET, POST, PUT y DELETE.Buena suerte!",
+        "desc2": "Para comenzar, dirígete al endpoint de 'preguntas' y pon el primer id, ex: http://localhost:3000/preguntas/1 para ver la primera pregunta."
+      }
+    ],
+    "preguntas": [
+      {
+        "id": "1",
+        "desc": "Encuentra la combinación correcta para abrir la caja fuerte. Responde al endpoint respostas con 'combinacion' para continuar ex: /respostas/combinacion."
+      },
+      {
+        "id": "2",
+        "desc": "La caja fuerte está abierta. Ahora necesitas encontrar la clave para descifrar el mensaje encriptado. Responde con 'clave'."
+      }
+    ],
+    "respostas": [
+      {
+        "id": "combinacion",
+        "desc": "Caja fuerte abierta correctamente. Dentro encuentras un mensaje encriptado y una pista para descifrarlo y ves a la siguiente pregunta ex: /pregunta/2.",
+        "siguiente_paso": "Realiza un PUT a /acciones/descifrar para descifrar el mensaje y cambia el valor de true a false."
+      },
+      {
+        "id": "clave",
+        "desc": "Mensaje descifrado correctamente. Ahora debes eliminar la alarma de seguridad del museo y ves al endpoint respostas con el id alarma.",
+        "siguiente_paso": "Haz un DELETE a /acciones/alarma para desactivar la alarma de seguridad."
+      },
+      {
+        "id": "alarma",
+        "desc": "Alarma de seguridad desactivada. Finalmente, necesitas registrar la obra de arte que encontraste para completar el juego.",
+        "siguiente_paso": "Haz un POST a /acciones/registro para registrar la obra de arte sigue la misma estructura de las acciones que hay."
+      },
+      {
+        "id": "registro",
+        "desc": "Obra de arte registrada correctamente. Has completado el juego y escapado del museo.",
+        "siguiente_paso": "Registra tu nombre en el endpoint 'guanyador' para completar el desafío con un PUT."
+      }
+    ],
+    "acciones": [
+      {
+        "id": "descifrar",
+        "desc": "Descifrar el mensaje encriptado.",
+        "completed": false
+      },
+      {
+        "id": "alarma",
+        "desc": "Desactivar la alarma de seguridad del museo.",
+        "completed": false
+      }
+    ],
+    "guanyador": [
+      {
+        "id": "1",
+        "nombre": "ANDREA"
+      }
+    ]
+  }

@@ -1,0 +1,59 @@
+{
+  "start": [
+    {
+      "id": "1",
+      "desc": "Te encuentras en una isla desierta, donde se rumorea que hay un tesoro pirata escondido. Debes pasar por las sigiuentes pruebas para superar los desafíos, deberás usar diferentes métodos GET, POST, PUT y DELETE. ",
+      "desc2": "Para comenzar, dirígete a http://localhost:3000/pistas/1 para ver la primera pista."
+    }
+  ],
+  "pistas": [
+    {
+      "id": "1",
+      "desc": "Encuentra la primera pista debajo del árbol grande en el centro de la isla. Responde al endpoint respostas con 'arbol' para continuar."
+    },
+    {
+      "id": "2",
+      "desc": "La pista debajo del árbol te lleva a una roca en forma de calavera. Responde con 'roca'."
+    }
+  ],
+  "respuestas": [
+    {
+      "id": "arbol",
+      "desc": "Encontraste la primera pista. Debajo del árbol encuentras un mapa roto y una parte del código para abrir el cofre. PARA CONTINUAR VES A LA PREGUNTA 2",
+      "next_step": "Realiza un PUT a /acciones/reparar_mapa para reparar el mapa. ES DECIR CAMBIA EL VALOR DE TRUE A FALSE"
+    },
+    {
+      "id": "roca",
+      "desc": "Encontraste la segunda pista. Debajo de la roca encuentras una brújula y otra parte del código. EN ESTE ENDPOINT DIRIGETE AL codigo",
+      "next_step": "Realiza un DELETE a /acciones/borrar_arena para descubrir la entrada a la cueva."
+    },
+    {
+      "id": "codigo",
+      "desc": "Código correcto. La entrada a la cueva está desbloqueada. Ahora necesitas registrar el cofre encontrado para completar el juego. PARA ACABAR VES AL REGISTRO EN ESTE ENDPOINT",
+      "next_step": "Haz un POST a /acciones/registrar_cofre para registrar el cofre. siguiendo la misma estructura que hay"
+    },
+    {
+      "id": "registro",
+      "desc": "Cofre registrado correctamente. Has completado el juego y encontrado el tesoro pirata.",
+      "next_step": "Registra tu nombre en el endpoint 'ganador' para completar el desafío. CON UN PUT"
+    }
+  ],
+  "acciones": [
+    {
+      "id": "reparar_mapa",
+      "desc": "Reparar el mapa roto.",
+      "completed": false
+    },
+    {
+      "id": "borrar_arena",
+      "desc": "Borrar la arena que cubre la entrada a la cueva.",
+      "completed": false
+    }
+  ],
+  "ganador": [
+    {
+      "id": "1",
+      "nombre": "Pirata 1"
+    }
+  ]
+}

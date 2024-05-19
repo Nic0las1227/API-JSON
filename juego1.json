@@ -1,0 +1,59 @@
+{
+    "start": [
+      {
+        "id": "1",
+        "desc": "Estás a bordo de una nave que ha perdido contacto con la Tierra. Tu objetivo es restaurar la comunicación y regresar a casa. Deberás realizar varias tareas y resolver acertijos utilizando diferentes métodos GET, POST, PUT y DELETE. ¡Buena suerte!",
+        "desc2": "Para comenzar, dirígete al endpoint de 'preguntas' y coloca el ID correspondiente, por ejemplo: http://localhost:3000/preguntas/1 para ver la primera pregunta."
+      }
+    ],
+    "preguntas": [
+      {
+        "id": "1",
+        "desc": "La primera tarea es reiniciar el sistema de energía de la nave. Responde al endpoint respostas con 'energia' para continuar."
+      },
+      {
+        "id": "2",
+        "desc": "El sistema de energía está en funcionamiento. Ahora necesitas recalibrar los sistemas de navegación. Responde con '/respostas/navegacion'."
+      }
+    ],
+    "respostas": [
+      {
+        "id": "energia",
+        "desc": "Sistema de energía reiniciado correctamente. Ahora debes calibrar los sistemas de navegación i ves a la /preguntas/2",
+        "siguiente_paso": "Realiza un PUT a /acciones/navegacion para calibrar los sistemas de navegación i cambia a true el valor de false."
+      },
+      {
+        "id": "navegacion",
+        "desc": "Sistemas de navegación calibrados correctamente. Encuentra y elimina el error del sistema de comunicaciones i ves al endpoint /respostas/comunicacion",
+        "siguiente_paso": "Haz un DELETE a /acciones/error para eliminar el error del sistema de comunicaciones."
+      },
+      {
+        "id": "comunicacion",
+        "desc": "El error ha sido eliminado. Ahora debes enviar una señal de socorro a la Tierra i ves al endpoint /respostas/socorro",
+        "siguiente_paso": "Haz un POST a /acciones/socorro para enviar la señal de socorro siguiendo el formato de la accion de navegacion."
+      },
+      {
+        "id": "socorro",
+        "desc": "Señal de socorro enviada correctamente. La misión está completa y la comunicación con la Tierra ha sido restablecida.",
+        "siguiente_paso": "Registra tu nombre en el endpoint 'guanyador' para completar la misión haciendo un PUT."
+      }
+    ],
+    "acciones": [
+      {
+        "id": "navegacion",
+        "desc": "Calibrar los sistemas de navegacion",
+        "completed": true
+      },
+      {
+          "id": "error",
+          "desc": "Eliminar el error del sistema de comunicaciones.",
+          "completed": false
+      }
+    ],
+    "guanyador": [
+      {
+        "id": "1",
+        "nombre": "Nicolás"
+      }
+    ]
+  }

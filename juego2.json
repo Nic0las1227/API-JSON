@@ -1,0 +1,44 @@
+{
+    "start": [
+      {
+        "id": "1",
+        "desc": "Estimat jugador, aquest es un simulador de calculs ràpids on hauràs de fer càlculs matemàtics en un màxim de temps de 3 minuts. En aquest joc et podras trobar sumes,restes,multilplicacions,divisions, percentatges i alguna sorpresa més. El temps l'hauràs de controla tu mateix amb el movil així evitem temptacions de agafar la calculadora. Només tu sabras si has superat el repte COMENÇEM !!!!",
+        "desc2": "Per veure les preguntes hauras de anar a l'endpoint de preguntas i posar el id corresponent ex: http://localhost:3000/preguntas/1 per anar a la pregunta 1 i canviant el nombre posant el corresponent a la seguent pregunta"
+      }
+    ],
+    "preguntas": [
+      {
+        "id": "1",
+        "desc": "3*4/2",
+        "desc2": "Respon a l'endopoint respostas afegint a la URL la resposta  "
+      },
+      {
+        "id": "2",
+        "desc": "Fes el 33% del nombre que has memoritzat i respon a l'endpoint de respostas"
+      }
+    ],
+    "respostas": [
+      {
+        "id": "6",
+        "desc": "Ben fet. Ara a aquest nombre sumali la arrel cuadrada de 121 i sumali 83 i la resposta posala afegint-la al endpoint respostas a la URL"
+      },
+      {
+        "id": "100",
+        "desc": "Molt bé, memoritza aquest nombre i ves a la pregunta 2, segueix així que ja queda poc"
+      },
+      {
+        "id": "33",
+        "desc": " Ben fet, ara afegeix una pregunta (en l'apartat de preguntes, seguint els id's es a dir amb l'id 3) en aquest pregunta posa: Digues el resultat de (5*4-2*5)/2.Un cop afegida la pregunta, respont-la seguint la mateixa forma com has estat fent fins ara afegint la resposta a la URL, amb l'endopint respostas. "
+      },
+      {
+        "id": "5",
+        "desc": "Felicitats, has acabat el joc, per acabar actualitza el endopint de guanyadors i posa  el teu nom  per que es quedi registrat i esborra totes les cosas que hi hagis afegit per tal que el seguent que agafi el joc començi de 0(menys l'apartat guanyadors)"
+      }
+    ],
+    "guanyador": [
+      {
+        "id": "10",
+        "desc": "Jan"
+      }
+    ]
+  }  

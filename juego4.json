@@ -1,0 +1,59 @@
+{
+  "start": [
+    {
+      "id": "1",
+      "desc": "Te encuentras atrapado en una habitación oscura y debes resolver varios acertijos para escapar. Para superar los desafíos, deberás usar diferentes metodos GET, POST, PUT y DELETE.",
+      "desc2": "Para comenzar, dirígete al endpoint de 'preguntas' ex : http://localhost:3000/preguntas/1 para ver la primera pregunta."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": "1",
+      "desc": "Encuentra el número oculto detrás del espejo. Responde en el endpoint respostas con el resultado de esta operacion para continuar: 6*3+4/2"
+    },
+    {
+      "id": "2",
+      "desc": "El número te lleva a un código encriptado. Responde con 'codigo' ex: /respostas/codigo."
+    }
+  ],
+  "respostas": [
+    {
+      "id": "20",
+      "desc": "Número correcto. Detrás del espejo encuentras una llave y una pista para descifrar el código, ves a la pregunta 2.",
+      "siguiente_paso": "Realiza un PUT a /acciones/descifrar para descifrar el código i cambia el valor de completado a true"
+    },
+    {
+      "id": "codigo",
+      "desc": "Código descifrado correctamente. Ahora debes apagar las luces intermitentes en la casa. Ves a /respostas/luces para el siguiente paso",
+      "siguiente_paso": "Haz un DELETE a /acciones/luces para apagar las luces."
+    },
+    {
+      "id": "luces",
+      "desc": "Luces apagadas correctamente. Finalmente, necesitas registrar el símbolo encontrado para completar el juego. Dirigete a /respostas/registro",
+      "siguiente_paso": "Haz un POST a /acciones/registro para registrar el símbolo. Siguieno la estructura de la accion que hay hecha "
+    },
+    {
+      "id": "registro",
+      "desc": "Símbolo registrado correctamente. Has completado el juego y escapado de la casa embrujada.",
+      "siguiente_paso": "Registra tu nombre en el endpoint 'guanyador' para completar el desafío. Utilizando el metodo PUT"
+    }
+  ],
+  "acciones": [
+    {
+      "id": "descifrar",
+      "desc": "Descifrar el código encriptado.",
+      "completado": false
+    },
+    {
+      "id": "luces",
+      "desc": "Apagar las luces intermitentes en la casa.",
+      "completado": false
+    }
+  ],
+  "guanyador": [
+    {
+      "id": "1",
+      "nombre": "ADRI"
+    }
+  ]
+}
