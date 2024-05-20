@@ -30,7 +30,7 @@
       {
         "id": "alarma",
         "desc": "Alarma de seguridad desactivada. Finalmente, necesitas registrar la obra de arte que encontraste para completar el juego.",
-        "siguiente_paso": "Haz un POST a /acciones/registro para registrar la obra de arte sigue la misma estructura de las acciones que hay."
+        "siguiente_paso": "Haz un POST a /acciones para registrar la obra de arte sigue la misma estructura de las acciones que hay."
       },
       {
         "id": "registro",
