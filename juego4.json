@@ -30,7 +30,7 @@
     {
       "id": "luces",
       "desc": "Luces apagadas correctamente. Finalmente, necesitas registrar el símbolo encontrado para completar el juego. Dirigete a /respostas/registro",
-      "siguiente_paso": "Haz un POST a /acciones/registro para registrar el símbolo. Siguieno la estructura de la accion que hay hecha "
+      "siguiente_paso": "Haz un POST a /acciones para registrar el símbolo. Siguieno la estructura de la accion que hay hecha "
     },
     {
       "id": "registro",
