@@ -30,7 +30,7 @@
     {
       "id": "codigo_correcto",
       "desc": "Código correcto. La entrada secreta está desbloqueada. Ahora necesitas registrar el cofre encontrado para completar el juego. PARA ACABAR DIRIGETE A registro",
-      "siguiente_paso": "Haz un POST a /acciones/registrar_cofre para registrar el cofre."
+      "siguiente_paso": "Haz un POST a /acciones para registrar el cofre."
     },
     {
       "id": "registro",
