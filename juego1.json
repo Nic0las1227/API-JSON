@@ -30,7 +30,7 @@
       {
         "id": "comunicacion",
         "desc": "El error ha sido eliminado. Ahora debes enviar una señal de socorro a la Tierra i ves al endpoint /respostas/socorro",
-        "siguiente_paso": "Haz un POST a /acciones/socorro para enviar la señal de socorro siguiendo el formato de la accion de navegacion."
+        "siguiente_paso": "Haz un POST a /acciones para enviar la señal de socorro siguiendo el formato de la accion de navegacion."
       },
       {
         "id": "socorro",
