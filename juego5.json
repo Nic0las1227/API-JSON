@@ -30,7 +30,7 @@
     {
       "id": "codigo",
       "desc": "Código correcto. La entrada a la cueva está desbloqueada. Ahora necesitas registrar el cofre encontrado para completar el juego. PARA ACABAR VES AL REGISTRO EN ESTE ENDPOINT",
-      "next_step": "Haz un POST a /acciones/registrar_cofre para registrar el cofre. siguiendo la misma estructura que hay"
+      "next_step": "Haz un POST a /acciones para registrar el cofre. siguiendo la misma estructura que hay"
     },
     {
       "id": "registro",
